@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <meta name="generator" content="oVideo"/>
+    <link href="css/videostylecss.css" rel="stylesheet" type="text/css"/>
+    <script src="js/tag.js" type="text/javascript"/>
+    </script>
+
+    <script type = "text/javascript" src = "js/main.js" ></script>
+    <script type='text/javascript' src="js/ac_runactivecontent.js"></script>
+    <script type='text/javascript' src="js/player.js"></script>
+</head>
+
+<body>
+<div id="Container">
+    <!--网站顶部-->
+    <div id="Header">
+        <div class="topmenu">
+            <div class="left"></div>
+            <div class="right"><span id='sys_topmenu'></span></div>
+        </div>
+        <div class="logosel">
+            <div class="logo"><a href='index.html' title='视频首页' hidefocus></a></div>
+            <div class="sel">
+                <form action="list.html" method="get"><select name="stype" size="1">
+                    <option value="0">视频</option>
+                    <option value="1">专辑</option>
+                    <option value="4">会员</option>
+                </select><input name="keyword" id="search_keywords" type="text"/>
+                    <button type="submit" id="search_submit"><span>搜&nbsp;索</span></button>
+                </form>
+            </div>
+        </div>
+        <div id="Link">
+            <div class="Link">
+                <a href='index.html' hidefocus>首页</a><a href='list.html' class='now' hidefocus>视频</a><a
+                    href='playlist.html' hidefocus>专辑</a><a href='userlist.html' hidefocus>会员</a> <a href="#"
+                                                                                                     onclick="javascript:history.go(-1);return false;">返回</a>
+            </div>
+        </div>
+    </div>
+    <!-- 网页顶部 结束 -->
+    <!-- 网页内容 开始 -->
+    <div id="PageBody">
+        <div id="videoTop">
+            <div class="vTitle">
+                <div id='ov_play_title'></div>
+            </div>
+            <div class="vInfo">播放：<span id='ov_play_playcount'></span>　
+                评论：<span id='ov_play_cmtcount'></span>　
+                收藏：<span id='ov_play_favcount'></span></div>
+        </div>
+        <!-- 左侧 -->
+        <div id="videoShow" class="videoShow">
+            <div id='swfplayerDiv'></div>
+            <div id='ovideoplayerDiv' style='overflow:hidden;width:970px;height:490px;background-color: #333;'>
+
+            </div>
+            <script>
+                var player_w = 970, player_h = 490;
+                var fcode = 'v192vpgmzsg5kevy';
+                var fuid = 130;
+                var onlyplayer = 0;
+
+                function show_video() {
+                    showplayer('ovideoplayerDiv', player_w, player_h, 'unicode=0&playindex=0&rolladplayback=0&rollad=0&c=0|v192vpgmzsg5kevy&auto=1&sn=1157393863&s=http://v.weihai.tv&config=playerdata/system_config.xml&page=getid.aspx&name=FLVPlayer.swf', 'oPlayer');
+                };
+                show_video();
+            </script>
+            <div id='ov_payitem_div'></div>
+        </div>
+        <!-- 右侧 -->
+        <div class="VSideBar">
+            <div class=userInfo>
+                <ul class="user">
+                    <li class=l1><img src="picture/usertile10.gif"/></li>
+                    <li class=l2><a href="u.html?uid=130" target=blank><span id='ov_play_username'></span></a>
+                        发表于 <span id='ov_play_addtime'></span></li>
+                    <li class=l3><a class="addFav" onclick="savesub(130)" href="javascript://">订阅会员的节目</a><a
+                            style="DISPLAY: none" class=shortMsg href="#">给TA发信息</a></li>
+                </ul>
+                <div class=vInfo><span id='ov_play_vinfo'></span></div>
+                <div class=vTag>标签：<span id='ov_play_tags'></span></div>
+                <div class=vChannel><span><a href="u.html?uid=130&a=v" target="blank">作者所有视频</a></span></div>
+            </div>
+            <!-- <div class=userOther>
+                 <div class=topic>作者其他视频</div>
+                 <ul class=userVideo>
+                     <li><a href='play_153ydnm3k2ortd7p.html'>身边故事 2017-11-27</a></li><li><a href='play_v192vpgmzsg5kevy.html'>希望的田野 2017-11-27</a></li><li><a href='play_j8m289d1iysajamr.html'>乳山市育黎镇：全力推进违法建设零</a></li><li><a href='play_s4r5sk14he22kl25.html'>南海新区将募集10亿元停车场专项</a></li><li><a href='play_50im94num6cl2exr.html'>高区沈阳路小学：翰墨飘香 立字立</a></li><li><a href='play_rprfxicanal0n1t6.html'>区市动态 2017-11-27</a></li><li><a href='play_4umx6t6r87adpdlo.html'>蓝色海洋中午补昨天 2017-11-28(</a></li><li><a href='play_ck9w0c5j9zy6bdp3.html'>我爱我车 2017-11-28(09:59:59-1</a></li><li><a href='play_eemufuqau7tce80y.html'>谈房论家 2017-11-28(10:02:00-1</a></li><li><a href='play_1coi8judr9sv40lm.html'>快乐航线 2017-11-28(09:02:00-9</a></li>
+                     <div class=clear></div>
+                 </ul>
+             </div>-->
+            <br/>
+            <div id="box1">
+                <div class=topic>同类视频</div>
+                <div class="listVideo sameflv">
+                    <ul>
+                        <li class='l1'><a href='play_v192vpgmzsg5kevy.html' target='_blank'>
+                            <img rel='nofollow' src='picture/nn613rz66y9x6o0o_3.jpg' 8060 alt='希望的田野 2017-11-25'
+                                 name="preimg"></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_v192vpgmzsg5kevy.html' target='_blank' title='希望的田野 2017-11-27'>希望的田野 2017-11-27</a></li>
+                        <li class='l3'>播放：<span>363</span></li>
+                    </ul>
+                    <ul>
+                        <li class='l1'><a href='play_nn613rz66y9x6o0o.html' target='_blank'>
+                            <img rel='nofollow' src='picture/nn613rz66y9x6o0o_3.jpg' 8060 alt='希望的田野 2017-11-25' name='preimg'/></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_nn613rz66y9x6o0o.html' target='_blank' title='希望的田野 2017-11-25'>希望的田野 2017-11-25</a></li>
+                        <li class='l3'>播放：<span>465</span></li>
+                    </ul>
+                    <ul>
+                        <li class='l1'><a href='play_974u4rqg88yjkngm.html' target='_blank'>
+                            <img rel='nofollow' src='picture/974u4rqg88yjkngm_3.jpg' 8060 alt='希望的田野 2017-11-24' name='preimg'/>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_974u4rqg88yjkngm.html' target='_blank' title='希望的田野 2017-11-24'>希望的田野 2017-11-24</a></li>
+                        <li class='l3'>播放：<span>469</span></li>
+                    </ul>
+                    <div class='clear'></div>
+                    <ul>
+                        <li class='l1'><a href='play_1z0mj0fbn2jb1b5d.html' target='_blank'>
+                            <img rel='nofollow' src='picture/1z0mj0fbn2jb1b5d_3.jpg' 8060 alt='希望的田野 2017-11-23' name='preimg'/></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_1z0mj0fbn2jb1b5d.html' target='_blank' title='希望的田野 2017-11-23'>希望的田野 2017-11-23</a></li>
+                        <li class='l3'>播放：<span>412</span></li>
+                    </ul>
+                    <ul>
+                        <li class='l1'><a href='play_ll3jsq5es1phch7k.html' target='_blank'>
+                            <img rel='nofollow' src='picture/ll3jsq5es1phch7k_3.jpg' 8060 alt='希望的田野 2017-11-22' name='preimg'/></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_ll3jsq5es1phch7k.html' target='_blank' title='希望的田野 2017-11-22'>希望的田野 2017-11-22</a></li>
+                        <li class='l3'>播放：<span>376</span></li>
+                    </ul>
+                    <ul>
+                        <li class='l1'><a href='play_1mn7r1fz7d371nrm.html' target='_blank'>
+                            <img rel='nofollow' src='picture/1mn7r1fz7d371nrm_3.jpg' 8060 alt='希望的田野 2017-11-21' name='preimg'/></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_1mn7r1fz7d371nrm.html' target='_blank' title='希望的田野 2017-11-21'>希望的田野2017-11-21</a>
+                        </li>
+                        <li class='l3'>播放：<span>551</span></li>
+                    </ul>
+                    <div class='clear'></div>
+                    <ul>
+                        <li class='l1'><a href='play_kf8pmkwn66jhogi2.html' target='_blank'>
+                            <img rel='nofollow' src='picture/kf8pmkwn66jhogi2_3.jpg' 8060 alt='希望的田野 2017-11-20' name='preimg'/></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_kf8pmkwn66jhogi2.html' target='_blank' title='希望的田野 2017-11-20'>希望的田野 2017-11-20</a></li>
+                        <li class='l3'>播放：<span>417</span></li>
+                    </ul>
+                    <ul>
+                        <li class='l1'>
+                            <a href='play_vcd6u9ae4iter02f.html' target='_blank'>
+                                <img rel='nofollow' src='picture/vcd6u9ae4iter02f_3.jpg' 8060 alt='希望的田野 2017-11-18' name='preimg'/></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_vcd6u9ae4iter02f.html' target='_blank' title='希望的田野 2017-11-18'>希望的田野2017-11-18</a></li>
+                        <li class='l3'>播放：<span>931</span></li>
+                    </ul>
+                    <ul>
+                        <li class='l1'><a href='play_n68c8hb093e4igo0.html' target='_blank'>
+                            <img rel='nofollow' src='picture/n68c8hb093e4igo0_3.jpg' 8060 alt='希望的田野 2017-11-17' name='preimg'/></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_n68c8hb093e4igo0.html' target='_blank' title='希望的田野 2017-11-17'>希望的田野 2017-11-17</a></li>
+                        <li class='l3'>播放：<span>462</span></li>
+                    </ul>
+                    <div class='clear'></div>
+                    <ul>
+                        <li class='l1'><a href='play_m33s54tah0xv5l8y.html' target='_blank'>
+                            <img rel='nofollow' src='picture/m33s54tah0xv5l8y_3.jpg' 8060 alt='希望的田野 2017-11-16' name='preimg'/></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_m33s54tah0xv5l8y.html' target='_blank' title='希望的田野 2017-11-16'>希望的田野 2017-11-16</a></li>
+                        <li class='l3'>播放：<span>414</span></li>
+                    </ul>
+                    <ul>
+                        <li class='l1'><a href='play_lw47okjeowgdpgtm.html' target='_blank'>
+                            <img rel='nofollow' src='picture/lw47okjeowgdpgtm_3.jpg' 8060 alt='希望的田野 2017-11-14' name='preimg'/></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_lw47okjeowgdpgtm.html' target='_blank' title='希望的田野 2017-11-14'>希望的田野 2017-11-14</a></li>
+                        <li class='l3'>播放：<span>942</span></li>
+                    </ul>
+                    <ul>
+                        <li class='l1'><a href='play_fxcv5ff3ef8m7rf6.html' target='_blank'>
+                            <img rel='nofollow' src='picture/fxcv5ff3ef8m7rf6_3.jpg' 8060 alt='希望的田野 2017-11-13' name='preimg'/></a>
+                        </li>
+                        <li class='l2'>
+                            <a href='play_fxcv5ff3ef8m7rf6.html' target='_blank' title='希望的田野 2017-11-13'>希望的田野 2017-11-13</a></li>
+                        <li class='l3'>播放：<span>606</span></li>
+                    </ul>
+                    <div class='clear'></div>
+                </div>
+            </div>
+        </div>
+        <!-- 左侧 -->
+        <div class="VMainBody">
+            <div id="videoButton" class="videoButton">
+                <div id='ov_play_button'></div>
+                <div class="clear"></div>
+            </div>
+
+            <div id='ov_play_appfile'></div>
+            <div id="videoComment" class="videoComment">
+                <div id="ov_ad_cmt">
+                    <div style="BORDER-BOTTOM: #99cc99 1px solid; BORDER-LEFT: #99cc99 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #ddffdd; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #99cc99 1px solid; BORDER-RIGHT: #99cc99 1px solid; PADDING-TOP: 10px">
+                        本站视频采用H.264高清编码方式压缩，需要Flash 9.0115以上版本才能播放。 <BR>
+                        <BR>
+                        如果您的浏览器无法正常观看，<a href="http://get.adobe.com/cn/flashplayer/" target=_blank>请下载最新的flash插件</a>。
+                    </div>
+                </div>
+
+                <div id=box1>
+                    <div class=topic>相关视频</div>
+                    <div class="sameVideo">
+                        <ul>
+                            <li class='l1'><a href='play_v192vpgmzsg5kevy.html' target='_blank'>
+                                <img rel='nofollow' src='picture/v192vpgmzsg5kevy_3.jpg' 8060 alt='希望的田野 2017-11-27' name='preimg'/></a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_v192vpgmzsg5kevy.html' target='_blank' title='希望的田野 2017-11-27'>希望的田野 2017-11-27</a>
+                            </li>
+                            <li class='l3'>播放：<span>363</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_nn613rz66y9x6o0o.html' target='_blank'>
+                                <img rel='nofollow' src='picture/nn613rz66y9x6o0o_3.jpg' 8060 alt='希望的田野 2017-11-25' name='preimg'/></a>
+                            </li>
+                            <li class='l2'><a href='play_nn613rz66y9x6o0o.html' target='_blank' title='希望的田野 2017-11-25'>希望的田野 2017-11-25</a></li>
+                            <li class='l3'>播放：<span>465</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_974u4rqg88yjkngm.html' target='_blank'>
+                                <img rel='nofollow' src='picture/974u4rqg88yjkngm_3.jpg' 8060 alt='希望的田野 2017-11-24' name='preimg'/></a>
+                            </li>
+                            <li class='l2'><a href='play_974u4rqg88yjkngm.html' target='_blank' title='希望的田野 2017-11-24'>希望的田野 2017-11-24</a></li>
+                            <li class='l3'>播放：<span>469</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_1z0mj0fbn2jb1b5d.html' target='_blank'>
+                                <img rel='nofollow' src='picture/1z0mj0fbn2jb1b5d_3.jpg' 8060 alt='希望的田野 2017-11-23' name='preimg'/></a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_1z0mj0fbn2jb1b5d.html' target='_blank' title='希望的田野 2017-11-23'>希望的田野 2017-11-23</a></li>
+                            <li class='l3'>播放：<span>412</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_ll3jsq5es1phch7k.html' target='_blank'>
+                                <img rel='nofollow' src='picture/ll3jsq5es1phch7k_3.jpg' 8060 alt='希望的田野 2017-11-22' name='preimg'/></a>
+                            </li>
+                            <li class='l2'><a href='play_ll3jsq5es1phch7k.html' target='_blank' title='希望的田野 2017-11-22'>希望的田野 2017-11-22</a></li>
+                            <li class='l3'>播放：<span>376</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_1mn7r1fz7d371nrm.html' target='_blank'>
+                                <img rel='nofollow' src='picture/1mn7r1fz7d371nrm_3.jpg' 8060 alt='希望的田野 2017-11-21' name='preimg'/></a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_1mn7r1fz7d371nrm.html' target='_blank' title='希望的田野 2017-11-21'>希望的田野 2017-11-21</a>
+                            </li>
+                            <li class='l3'>播放：<span>551</span></li>
+                        </ul>
+                        <div class='clear'></div>
+                        <ul>
+                            <li class='l1'><a href='play_kf8pmkwn66jhogi2.html' target='_blank'>
+                                <img rel='nofollow' src='picture/kf8pmkwn66jhogi2_3.jpg' 8060 alt='希望的田野 2017-11-20' name='preimg'/>
+                            </a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_kf8pmkwn66jhogi2.html' target='_blank' title='希望的田野 2017-11-20'>希望的田野 2017-11-20</a>
+                            </li>
+                            <li class='l3'>播放：<span>417</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_vcd6u9ae4iter02f.html' target='_blank'>
+                                <img rel='nofollow' src='picture/vcd6u9ae4iter02f_3.jpg' 8060 alt='希望的田野 2017-11-18' name='preimg'/>
+                            </a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_vcd6u9ae4iter02f.html' target='_blank' title='希望的田野 2017-11-18'>希望的田野 2017-11-18</a>
+                            </li>
+                            <li class='l3'>播放：<span>931</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_n68c8hb093e4igo0.html' target='_blank'>
+                                <img rel='nofollow' src='picture/n68c8hb093e4igo0_3.jpg' 8060 alt='希望的田野 2017-11-17' name='preimg'/>
+                            </a>
+                            </li>
+                            <li class='l2'><a href='play_n68c8hb093e4igo0.html' target='_blank' title='希望的田野 2017-11-17'>希望的田野 2017-11-17</a></li>
+                            <li class='l3'>播放：<span>462</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_m33s54tah0xv5l8y.html' target='_blank'>
+                                <img rel='nofollow' src='picture/m33s54tah0xv5l8y_3.jpg' 8060 alt='希望的田野 2017-11-16' name='preimg'/>
+                            </a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_m33s54tah0xv5l8y.html' target='_blank' title='希望的田野 2017-11-16'>希望的田野 2017-11-16</a>
+                            </li>
+                            <li class='l3'>播放：<span>414</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_lw47okjeowgdpgtm.html' target='_blank'>
+                                <img rel='nofollow' src='picture/lw47okjeowgdpgtm_3.jpg' 8060 alt='希望的田野 2017-11-14' name='preimg'/>
+                            </a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_lw47okjeowgdpgtm.html' target='_blank' title='希望的田野 2017-11-14'>希望的田野 2017-11-14</a>
+                            </li>
+                            <li class='l3'>播放：<span>942</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_fxcv5ff3ef8m7rf6.html' target='_blank'>
+                                <img rel='nofollow' src='picture/fxcv5ff3ef8m7rf6_3.jpg' 8060 alt='希望的田野 2017-11-13' name='preimg'/>
+                            </a>
+                            </li>
+                            <li class='l2'><a href='play_fxcv5ff3ef8m7rf6.html' target='_blank' title='希望的田野 2017-11-13'>希望的田野 2017-11-13</a></li>
+                            <li class='l3'>播放：<span>606</span></li>
+                        </ul>
+                        <div class='clear'></div>
+                        <ul>
+                            <li class='l1'><a href='play_myu8x1e3w02mhogk.html' target='_blank'>
+                                <img rel='nofollow' src='picture/myu8x1e3w02mhogk_3.jpg' 8060 alt='希望的田野 2017-11-11' name='preimg'/>
+                            </a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_myu8x1e3w02mhogk.html' target='_blank' title='希望的田野 2017-11-11'>希望的田野 2017-11-11</a>
+                            </li>
+                            <li class='l3'>播放：<span>544</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'><a href='play_y2y44z2v8akxc019.html' target='_blank'>
+                                <img rel='nofollow' src='picture/y2y44z2v8akxc019_3.jpg' 8060 alt='希望的田野 2017-11-10' name='preimg'/>
+                            </a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_y2y44z2v8akxc019.html' target='_blank' title='希望的田野 2017-11-10'>希望的田野 2017-11-10</a>
+                            </li>
+                            <li class='l3'>播放：<span>434</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'>
+                                <a href='play_h88vpk489jjb1nkw.html' target='_blank'>
+                                    <img rel='nofollow' src='picture/h88vpk489jjb1nkw_3.jpg' 8060 alt='希望的田野 2017-11-09' name='preimg'/></a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_h88vpk489jjb1nkw.html' target='_blank' title='希望的田野 2017-11-09'>希望的田野 2017-11-09</a></li>
+                            <li class='l3'>播放：<span>608</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'>
+                                <a href='play_r14eldkanps8ejrc.html' target='_blank'>
+                                    <img rel='nofollow' src='picture/r14eldkanps8ejrc_3.jpg' 8060 alt='希望的田野 2017-11-08' name='preimg'/></a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_r14eldkanps8ejrc.html' target='_blank'
+                                   title='希望的田野 2017-11-08'>希望的田野 2017-11-08</a>
+                            </li>
+                            <li class='l3'>播放：<span>1183</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'>
+                                <a href='play_fx3whcnlgrlcp2h9.html' target='_blank'>
+                                    <img rel='nofollow' src='picture/fx3whcnlgrlcp2h9_3.jpg' 8060 alt='希望的田野 2017-11-07' name='preimg'/></a>
+                            </li>
+                            <li class='l2'>
+                                <a href='play_fx3whcnlgrlcp2h9.html' target='_blank' title='希望的田野 2017-11-07'>希望的田野 2017-11-07</a></li>
+                            <li class='l3'>播放：<span>781</span></li>
+                        </ul>
+                        <ul>
+                            <li class='l1'>
+                                <a href='play_x1fhl1809rc68rcn.html' target='_blank'>
+                                    <img rel='nofollow' src='picture/x1fhl1809rc68rcn_3.jpg' 8060 alt='希望的田野 2017-11-06'
+                                </a>
+                            </li>
+                            <li class='l2'><a href='play_x1fhl1809rc68rcn.html' target='_blank' title='希望的田野 2017-11-06'>希望的田野 2017-11-06</a></li>
+                            <li class='l3'>播放：<span>808</span></li>
+                        </ul>
+                        <div class='clear'></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="name"></div>
+                    <div class="more"><a href="#cmt">发表评论</a></div>
+                </div>
+                <div class="newComment"><a name=cmt></a>
+
+                    <script type="text/javascript" charset="utf-8" src="js/kindeditor-min.js"></script>
+                    <script type="text/javascript" charset="utf-8" src="js/zh_cn.js"></script>
+                    <script>
+                        var editor;
+                        KindEditor.ready(function (K) {
+                            editor = K.create('textarea[name="c_cmt"]', {
+                                resizeType: 1, allowPreviewEmoticons: false, allowImageUpload: false,
+                                afterFocus: function () {
+                                    showcmtcode(0);
+                                },
+                                items: ['fontname', 'fontsize', '|', 'forecolor', 'bold', 'italic', 'underline',
+                                    'removeformat', '|', 'emoticons', 'link', 'unlink', 'source']
+                            });
+                        });
+                    </script>
+                    <div class='shows'>
+                        <textarea id='c_cmt' name='c_cmt' onfocus='showcmtcode(0);'></textarea>
+                    </div>
+                    <div class='shows'><p>您目前是匿名发表 <a href='login.html?fromurl=%2fplay_v192vpgmzsg5kevy.html'>登录</a> |
+                        <a href='reg.html'>注册</a></p></div>
+                    <div class='shows' id='cmtcode0'></div>
+                    <div class='shows'>
+                        <input type='hidden' id="filetype" name="filetype" value="0"/>
+                        <input onclick='addcmts()' value=" 发表评论 " type='button' name=''/>
+                    </div>
+
+                </div>
+                <div id='ov_play_cmtlist'></div>
+            </div>
+        </div>
+        <!-- 左侧 end -->
+    </div>
+    <div id=FooTer>
+        互联网视听节目服务（AVSP） 鲁备2009001号 <br/>
+        中华人民共和国互联网新闻信息服务许可证 鲁ICP备06041465号<br/>
+        网站热线：0631-5191412 邮箱 ：whcmw2009@126.com <br/>
+        网络实名：威海传媒网 网络设计/系统支持：威海传媒网
+        <!--
+        <script src="js/stat.js" language="JavaScript"></script>
+        -->
+        <script src="js/stat.js" language="JavaScript"></script>
+
+    </div>
+    <!-- JiaThis Button BEGIN -->
+    <script type="text/javascript">
+
+        function getMplayHtml() {
+            var reg = new RegExp("(.*)/play_(.*).html");
+            var r = window.location.href.match(reg);
+            var m_r = "";
+            m_r = m_r.concat("http://v.weihai.tv/mplay_c_", r[2], ".html");
+            if (m_r != "") {
+                return m_r;
+            }
+            return window.location.href;
+        }
+
+        var jiathis_config = {
+            url: getMplayHtml(),
+        }
+
+    </script>
+    <script type="text/javascript">
+        var User = document.getElementById('ov_play_username');
+        if (User) {
+            if (User.innerHTML.indexOf("民生新闻专用") > -1) {
+                User.innerHTML = User.innerHTML.replace("民生新闻专用", "威海传媒网");
+            }
+        }
+    </script>
+    <script type="text/javascript" src="js/jiathis_r.js" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+    <!-- 网页内容 结束 -->
+</div>
+</body>
+</html>
+<script type='text/javascript'>initplayer();</script>
+<script type='text/javascript' src='js/ajax.js'></script>
